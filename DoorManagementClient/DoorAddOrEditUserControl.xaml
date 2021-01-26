@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="DoorManagementClient.DoorAddOrEditUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:localValueConvertor="clr-namespace:DoorManagementClient.ValueConvertor"
+             mc:Ignorable="d" Height="239" Width="420">
+    <UserControl.Resources>
+        <localValueConvertor:LockUnlockEnumToTextConverter x:Key="LockUnlockConvertor" />
+        <localValueConvertor:OpenCloseEnumToTextConverter x:Key="OpenCloseConvertor" />
+        <localValueConvertor:LockUnlockEnumToColorConvertor x:Key="LockUnlockColorConvertor" />
+        <localValueConvertor:OpenCloseStateEnumToColorConvertor x:Key="OpenCloseColorConvertor" />
+        
+    </UserControl.Resources>
+    <Grid>
+        <Border BorderThickness="2" BorderBrush="Black"></Border>
+        <Label Content="Door Label"  FontWeight="Bold" HorizontalAlignment="Left" Margin="34,50,0,0" VerticalAlignment="Top" Width="102" Height="27"/>
+        <TextBox Name ="txtDoorLabel"   HorizontalAlignment="Left" Height="23" Margin="182,54,0,0" TextWrapping="Wrap" Text="{Binding SelectedDoor.DoorLabel,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="226"/>
+        <Label Content="Open/Close Status"  FontWeight="Bold" HorizontalAlignment="Left" Margin="34,84,0,0" VerticalAlignment="Top" Width="120" Height="27"/>
+        <Button Name="btnOpenClose"  FontWeight="Bold"  Command="{Binding ToggleOpenCloseStateCmd}" Content="{Binding SelectedDoor.OpenCloseStatus ,Converter={StaticResource OpenCloseConvertor}}" Background="{Binding SelectedDoor.OpenCloseStatus ,Converter={StaticResource OpenCloseColorConvertor}}" HorizontalAlignment="Left" Margin="182,84,0,0" VerticalAlignment="Top" Width="103" Height="39"/>
+        <Button Name="btnLockUnlock"  FontWeight="Bold" Command="{Binding ToggleLockUnlockStateCmd}" Content="{Binding SelectedDoor.LockUnlockStatus,Converter={StaticResource LockUnlockConvertor }}"  Background ="{Binding SelectedDoor.LockUnlockStatus ,Converter={StaticResource LockUnlockColorConvertor}}" HorizontalAlignment="Left" Margin="182,138,0,0" VerticalAlignment="Top" Width="103" Height="39"/>
+        <Label Content="Lock/UnLock Status" FontWeight="Bold" HorizontalAlignment="Left" Margin="34,138,0,0" VerticalAlignment="Top" Width="131" Height="27"/>
+        <Button x:Name="btnAddOrUpdate"  FontWeight="Bold" Command="{Binding AddOrUpdateCmd}" Content="{Binding AddOrUpdateText}" HorizontalAlignment="Left" Margin="182,201,0,0" VerticalAlignment="Top" Width="92" Height="29"/>
+        <Button x:Name="btnCancel"  Command="{Binding CancelCmd}" FontWeight="Bold" Content="Cancel" HorizontalAlignment="Left" Margin="62,201,0,0" VerticalAlignment="Top" Width="92" Height="29" />
+
+    </Grid>
+</UserControl>

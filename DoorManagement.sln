@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoorManagementClient", "DoorManagementClient\DoorManagementClient.csproj", "{B00FC65D-F2F2-4D2D-B085-5D76D7484015}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoorManagement.Domain", "GateManagement.Domain\DoorManagement.Domain.csproj", "{44B5C92A-83B4-41C1-8E61-072DF9F8F358}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoorManagementServer", "DoorManagementServer\DoorManagementServer.csproj", "{FDD85163-589F-4449-A0F4-39C41FD9DC4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoorManagement.Test", "DoorManagement.Test\DoorManagement.Test.csproj", "{8AE58312-DCFA-441B-86CF-034EDE7807AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B00FC65D-F2F2-4D2D-B085-5D76D7484015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B00FC65D-F2F2-4D2D-B085-5D76D7484015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B00FC65D-F2F2-4D2D-B085-5D76D7484015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B00FC65D-F2F2-4D2D-B085-5D76D7484015}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44B5C92A-83B4-41C1-8E61-072DF9F8F358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44B5C92A-83B4-41C1-8E61-072DF9F8F358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44B5C92A-83B4-41C1-8E61-072DF9F8F358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44B5C92A-83B4-41C1-8E61-072DF9F8F358}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDD85163-589F-4449-A0F4-39C41FD9DC4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDD85163-589F-4449-A0F4-39C41FD9DC4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDD85163-589F-4449-A0F4-39C41FD9DC4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDD85163-589F-4449-A0F4-39C41FD9DC4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AE58312-DCFA-441B-86CF-034EDE7807AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AE58312-DCFA-441B-86CF-034EDE7807AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AE58312-DCFA-441B-86CF-034EDE7807AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AE58312-DCFA-441B-86CF-034EDE7807AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8400D4F9-25BF-48AF-89C1-77F2D237DFCD}
+	EndGlobalSection
+EndGlobal
